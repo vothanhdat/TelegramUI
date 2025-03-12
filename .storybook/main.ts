@@ -1,78 +1,57 @@
-import type { StorybookConfig } from '@storybook/react-webpack5';
+// import type { StorybookConfig } from '@storybook/react-webpack5';
 import path from 'path';
 
-const config: StorybookConfig = {
+const config = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
   addons: [
-    '@storybook/addon-links',
-    {
-      name: '@storybook/addon-essentials',
-      options: {
-        actions: false,
-      },
-    },
+    '@storybook/addon-essentials',
+    '@storybook/addon-mdx-gfm',
+    '@chromatic-com/storybook'
   ],
-  framework: {
-    name: '@storybook/react-webpack5',
-    options: {
-      fastRefresh: true,
-      builder: {
-        useSWC: true,
+
+  async viteFinal(config) {
+    // Merge custom configuration into the default config
+    const { mergeConfig } = await import('vite');
+    const { default: tsconfigPaths } = await import('vite-tsconfig-paths');
+
+    return mergeConfig(config, {
+      // Add dependencies to pre-optimization
+      optimizeDeps: {
+        // include: ['storybook-dark-mode'],
       },
-    },
+      plugins: [tsconfigPaths()],
+    });
   },
-  swc: () => ({
-    jsc: {
-      transform: {
-        react: {
-          runtime: 'automatic',
-        },
-      },
-    },
-  }),
-  docs: {
-    autodocs: true,
-    defaultName: 'Documentation',
-  },
-  typescript: {
-    reactDocgen: 'react-docgen-typescript',
-    reactDocgenTypescriptOptions: {
-      shouldExtractLiteralValuesFromEnum: true,
-      shouldRemoveUndefinedFromOptional: true,
-      propFilter: (prop) => {
-        if (prop.parent) {
-          return prop.parent.fileName.includes('src/components');
-        }
 
-        if (!prop.declarations || prop.declarations.length === 0) {
-          return false;
-        }
+  //   if (!config.resolve) {
+  //     config.resolve = {};
+  //   }
 
-        return prop.declarations[0].fileName.includes('src/components');
-      },
-    },
-  },
-  webpackFinal: async (config) => {
-    if (!config.resolve) {
-      config.resolve = {};
-    }
+  //   if (!config.module) {
+  //     config.module = {};
+  //   }
 
-    if (!config.module) {
-      config.module = {};
-    }
+  //   if (!config.module.rules) {
+  //     config.module.rules = [];
+  //   }
 
-    if (!config.module.rules) {
-      config.module.rules = [];
-    }
+  //   config.resolve.modules = [
+  //     ...(config.resolve.modules || []),
+  //     path.resolve(__dirname, '../src'),
+  //   ];
 
-    config.resolve.modules = [
-      ...(config.resolve.modules || []),
-      path.resolve(__dirname, '../src'),
-    ];
-
-    return config;
-  },
+  //   return config;
+  // },
   staticDirs: ['./media'],
+
+  framework: {
+    name: '@storybook/react-vite',
+    options: {}
+  },
+
+  docs: {
+    autodocs: true
+  }
 };
 
 export default config;

@@ -3,6 +3,7 @@ import { AppearanceDecorator } from './decorators/appearance';
 import { AppRootDecorator } from './decorators/root';
 import { StrictDecorator } from './decorators/strict';
 import { Controls, Description, Primary, Stories, Subtitle, Title } from '@storybook/blocks';
+import React from 'react';
 
 const preview: Preview = {
   parameters: {
@@ -22,7 +23,7 @@ const preview: Preview = {
         </>
       ),
     },
-    actions: { argTypesRegex: '^on[A-Z].*' },
+    // actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {
       expanded: true,
       matchers: {

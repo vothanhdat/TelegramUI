@@ -1,5 +1,7 @@
 .wrapper {
   position: relative;
+  --animate-color: color-mix(in srgb, #aaa 15%, transparent);
+  --animate-color-bg: color-mix(in srgb, #aaa 30%, transparent);
 }
 
 .wrapper--visible::before,
@@ -16,17 +18,16 @@
 
 .wrapper:not(.wrapper--noAnimation)::after {
   z-index: var(--tgui--z-index--skeleton);
-  background-color: var(--tgui--bg_color);
-  animation: fade 1.8s linear infinite;
+  background: linear-gradient(120deg, var(--animate-color-bg) 10%, var(--animate-color) 25%,var(--animate-color) 35%, var(--animate-color-bg) 90%); 
+  animation: fade 50s linear infinite alternate;
 }
 
 @keyframes fade {
-  0%, 100% {
-    opacity: .4;
+  0% {
+    background-position: -10000px 0;
   }
-
-  50% {
-    opacity: .7;
+  100% {
+    background-position: 10000px 0;
   }
 }
 

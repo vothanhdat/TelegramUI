@@ -5,7 +5,10 @@
     "module": "commonjs",
     "baseUrl": ".",
     "paths": {
-      "*": ["./src/*"]
+      "*": ["./src/*"],
+      "components/*": ["./src/components/*"],
+      "helpers/*": ["./src/helpers/*"],
+      "hooks/*": ["./src/hooks/*"],
     },
     "outDir": "./dist",
     "esModuleInterop": true,
