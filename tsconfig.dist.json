@@ -3,7 +3,12 @@
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "dist",
-    "declarationMap": true
+    "declarationMap": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "moduleResolution": "node",
   },
   "include": ["src/**/*.ts*"],
   "exclude": [

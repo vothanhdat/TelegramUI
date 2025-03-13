@@ -1,5 +1,4 @@
 // import type { StorybookConfig } from '@storybook/react-webpack5';
-import path from 'path';
 
 const config = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
@@ -12,14 +11,13 @@ const config = {
   async viteFinal(config) {
     // Merge custom configuration into the default config
     const { mergeConfig } = await import('vite');
-    const { default: tsconfigPaths } = await import('vite-tsconfig-paths');
 
     return mergeConfig(config, {
       // Add dependencies to pre-optimization
       optimizeDeps: {
         // include: ['storybook-dark-mode'],
       },
-      plugins: [tsconfigPaths()],
+      // plugins: [tsconfigPaths()],
     });
   },
 
@@ -51,7 +49,12 @@ const config = {
 
   docs: {
     autodocs: true
-  }
+  },
+  build: {
+    test: {
+      disableBlocks: false,
+    },
+  },
 };
 
 export default config;

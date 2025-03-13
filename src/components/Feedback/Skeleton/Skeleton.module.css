@@ -18,16 +18,17 @@
 
 .wrapper:not(.wrapper--noAnimation)::after {
   z-index: var(--tgui--z-index--skeleton);
-  background: linear-gradient(120deg, var(--animate-color-bg) 10%, var(--animate-color) 25%,var(--animate-color) 35%, var(--animate-color-bg) 90%); 
-  animation: fade 50s linear infinite alternate;
+  background-image: linear-gradient(90deg, var(--animate-color-bg) 0%, var(--animate-color) 25%,var(--animate-color) 35%, var(--animate-color-bg) 100%); 
+  background-size: 200% 200%;
+  animation: fade 2s linear infinite;
 }
 
 @keyframes fade {
   0% {
-    background-position: -10000px 0;
+    background-position: 200% 0;
   }
   100% {
-    background-position: 10000px 0;
+    background-position: -200% 0;
   }
 }
 

@@ -2,31 +2,25 @@
   "name": "@telegram-apps/telegram-ui",
   "version": "2.1.7",
   "description": "World-class, ultimate UI developer toolkit.",
-  "main": "dist/cjs/index.js",
-  "module": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "main": "./dist/index.js",
   "files": [
-    "./dist"
+    "dist"
   ],
-  "sideEffects": [
-    "./dist/index.js",
-    "./dist/cjs/index.js"
-  ],
+  "types": "./dist/index.d.ts",
   "engines": {
     "node": ">=18.0.0",
     "npm": ">=7.0.0"
   },
   "scripts": {
-    "build": "concurrently \"npm run build:test\" \"npm run build:types\" \"npm run build:js-css\"",
+    "build": "vite build",
     "build:test": "jest",
     "build:types": "concurrently 'npm run tsc:*'",
-    "build:js-css": "concurrently \"npm run swc:*\" \"npm run postcss\"",
-    "postcss": "webpack --config webpack.styles.config.js",
+    "build:js-css": "concurrently \"npm run swc:*\"",
     "swc-base": "cross-env NODE_ENV=production swc src/ --config-file package.swcrc --extensions .tsx,.jsx,.ts,.js",
     "swc:es6": "npm run swc-base -- -d dist -s",
     "swc:cjs": "npm run swc-base -- -d dist/cjs -s -C module.type=commonjs",
-    "tsc:es6": "cross-env NODE_ENV=production tsc --emitDeclarationOnly --declaration -p tsconfig.dist.json && tsc-alias",
-    "tsc:cjs": "cross-env NODE_ENV=production tsc --emitDeclarationOnly --declaration --outDir dist/cjs/ -p tsconfig.dist.json && tsc-alias",
+    "tsc:es6": "cross-env NODE_ENV=production tsc --declaration -p tsconfig.dist.json && tsc-alias",
+    "tsc:cjs": "cross-env NODE_ENV=production tsc --declaration --outDir dist/cjs/ -p tsconfig.dist.json && tsc-alias",
     "dev": "storybook dev -p 6006 --docs",
     "storybook:build": "storybook build --docs",
     "storybook:publish": "rsync ./storybook-static/ xelene:/var/www/tgui.xelene.me -avz --exclude .git/ --exclude node_modules/"
@@ -76,15 +70,16 @@
     "ts-jest": "^29.1.2",
     "ts-loader": "^9.5.1",
     "tsc-alias": "^1.8.8",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "vite": "^6.2.1",
+    "vite-plugin-dts": "^4.5.3",
+    "@swc/helpers": "^0.5.3",
+    "vite-tsconfig-paths": "^5.1.4"
   },
   "dependencies": {
     "@floating-ui/react-dom": "^2.0.8",
-    "@swc/helpers": "^0.5.3",
     "@twa-dev/types": "^7.0.0",
-    "@xelene/vaul-with-scroll-fix": "0.1.4",
-    "vite": "^6.2.1",
-    "vite-tsconfig-paths": "^5.1.4"
+    "@xelene/vaul-with-scroll-fix": "0.1.4"
   },
   "resolutions": {
     "@types/react": "18.2.0",
