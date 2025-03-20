@@ -1,42 +1,36 @@
-import path, { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
 import tsconfigPaths from 'vite-tsconfig-paths';
 import dts from 'vite-plugin-dts'
-import { globSync } from 'node:fs';
-
+import { extname, relative, resolve } from 'path'
+import glob from 'glob'
+import react from '@vitejs/plugin-react'
 
 
 export default defineConfig({
   build: {
-    // lib: {
-    //   entry: 'src/index.ts',
-    //   name: 'TelegramUI',
-    //   formats: ['es']
-    // },
+    lib: {
+      entry: 'src/index.ts',
+      name: 'TelegramUI',
+      formats: ['es']
+    },
     rollupOptions: {
-      // input,
-      preserveModules: true,
       external: ['react', 'react-dom', 'react/jsx-runtime'],
       input: Object.fromEntries(
-        globSync(['src/components/**/*.tsx', 'src/**/*.ts'])
-          .filter(e => !e.includes(".stories."))
-          .map((file) => {
-            const entryName = path.relative(
-              'src',
-              file.slice(0, file.length - path.extname(file).length)
-            )
-            const entryUrl = fileURLToPath(new URL(file, import.meta.url))
-            return [entryName, entryUrl]
-          })
+        glob.sync('src/**/*.{ts,tsx}', {
+          ignore: ["src/**/*.d.ts", "src/**/*.stories.tsx"],
+        }).map(file => [
+          relative(
+            'src',
+            file.slice(0, file.length - extname(file).length)
+          ),
+          fileURLToPath(new URL(file, import.meta.url))
+        ])
       ),
-      
       output: {
-        preserveModulesRoot: 'src', // maintain folder structure relative to src
+        preserveModulesRoot: 'src',
         entryFileNames: '[name].js',
-        chunkFileNames: '[name].js',
         assetFileNames: 'assets/[name][extname]',
-        format:'esm',
         globals: {
           react: 'React',
           'react-dom': 'React-dom',
@@ -44,8 +38,12 @@ export default defineConfig({
         },
       },
     },
-    target: 'node20',
+    // target: 'node20',
     outDir: 'dist',
   },
-  plugins: [tsconfigPaths(), dts()],
+  plugins: [
+    tsconfigPaths(),
+    react(),
+    dts({ include: ['src'] })
+  ],
 })
