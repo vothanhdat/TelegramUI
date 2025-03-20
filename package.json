@@ -1,6 +1,6 @@
 {
-  "name": "@telegram-apps/telegram-ui",
-  "version": "2.1.7",
+  "name": "telegram-ui-fork",
+  "version": "2.1.7c",
   "description": "World-class, ultimate UI developer toolkit.",
   "type": "module",
   "main": "dist/index.js",
@@ -17,17 +17,8 @@
   },
   "scripts": {
     "build": "rm -r -f dist && vite build",
-    "build:test": "jest",
-    "build:types": "concurrently 'npm run tsc:*'",
-    "build:js-css": "concurrently \"npm run swc:*\"",
-    "swc-base": "cross-env NODE_ENV=production swc src/ --config-file package.swcrc --extensions .tsx,.jsx,.ts,.js",
-    "swc:es6": "npm run swc-base -- -d dist -s",
-    "swc:cjs": "npm run swc-base -- -d dist/cjs -s -C module.type=commonjs",
-    "tsc:es6": "cross-env NODE_ENV=production tsc --declaration -p tsconfig.dist.json && tsc-alias",
-    "tsc:cjs": "cross-env NODE_ENV=production tsc --declaration --outDir dist/cjs/ -p tsconfig.dist.json && tsc-alias",
     "dev": "storybook dev -p 6006 --docs",
-    "storybook:build": "storybook build --docs",
-    "storybook:publish": "rsync ./storybook-static/ xelene:/var/www/tgui.xelene.me -avz --exclude .git/ --exclude node_modules/"
+    "prepublishOnly": "yarn build"
   },
   "repository": {
     "type": "git",
@@ -52,15 +43,10 @@
     "@storybook/react": "^8.6.4",
     "@storybook/react-vite": "^8.6.4",
     "@svgr/webpack": "^8.1.0",
-    "@swc/cli": "^0.1.63",
-    "@swc/core": "^1.3.105",
-    "@swc/helpers": "^0.5.3",
-    "@types/eslint": "^8",
     "@types/jest": "^29.5.12",
     "@types/react": "18.2.0",
     "@types/react-dom": "^18",
-    "@typescript-eslint/eslint-plugin": "^6.18.0",
-    "@typescript-eslint/parser": "6.18.0",
+    "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.17",
     "concurrently": "^8.2.2",
     "cross-env": "^7.0.3",
@@ -71,7 +57,6 @@
     "react-dom": "^18.2.0",
     "remove-files-webpack-plugin": "^1.5.0",
     "storybook": "^8.6.4",
-    "swc-loader": "^0.2.3",
     "ts-jest": "^29.1.2",
     "ts-loader": "^9.5.1",
     "tsc-alias": "^1.8.8",
@@ -83,12 +68,11 @@
   "dependencies": {
     "@floating-ui/react-dom": "^2.0.8",
     "@twa-dev/types": "^7.0.0",
-    "@vitejs/plugin-react": "^4.3.4",
     "@xelene/vaul-with-scroll-fix": "0.1.4"
   },
   "resolutions": {
     "@types/react": "18.2.0",
     "@types/react-dom": "18.2.0"
   },
-  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
+  "packageManager": "yarn@4.7.0"
 }
