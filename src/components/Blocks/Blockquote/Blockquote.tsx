@@ -1,5 +1,7 @@
 import { HTMLAttributes, ReactNode } from 'react';
 import styles from './Blockquote.module.css';
+export {styles as BlockquoteClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

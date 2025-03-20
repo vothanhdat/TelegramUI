@@ -1,5 +1,7 @@
 import { useContext } from 'react';
 import styles from './CardCell.module.css';
+export {styles as CardCellClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { hasReactNode } from 'helpers/react/node';

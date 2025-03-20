@@ -2,6 +2,8 @@
 
 import { ChangeEvent, InputHTMLAttributes, useEffect, useState } from 'react';
 import styles from './ColorInput.module.css';
+export {styles as ColorInputClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { callMultiple } from 'helpers/function';

@@ -1,5 +1,7 @@
 import { forwardRef, InputHTMLAttributes } from 'react';
 import styles from './Radio.module.css';
+export {styles as RadioClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

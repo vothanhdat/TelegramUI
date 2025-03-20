@@ -1,5 +1,7 @@
 import { HTMLAttributes } from 'react';
 import styles from './Skeleton.module.css';
+export {styles as SkeletonClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

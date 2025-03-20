@@ -2,6 +2,8 @@
 
 import { HTMLAttributes } from 'react';
 import styles from './SectionHeader.module.css';
+export {styles as SectionHeaderClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { usePlatform } from 'hooks/usePlatform';

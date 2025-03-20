@@ -2,6 +2,8 @@
 
 import { forwardRef, InputHTMLAttributes } from 'react';
 import styles from './Selectable.module.css';
+export {styles as SelectableClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { usePlatform } from 'hooks/usePlatform';

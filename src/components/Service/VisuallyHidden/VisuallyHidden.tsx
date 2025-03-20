@@ -1,5 +1,7 @@
 import React, { AllHTMLAttributes, ElementType,forwardRef } from 'react';
 import styles from './VisuallyHidden.module.css';
+export {styles as VisuallyHiddenClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

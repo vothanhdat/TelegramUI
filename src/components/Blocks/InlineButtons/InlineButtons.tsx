@@ -2,6 +2,8 @@
 
 import { forwardRef, ForwardRefExoticComponent, HTMLAttributes, ReactElement, RefAttributes } from 'react';
 import styles from './InlineButtons.module.css';
+export {styles as InlineButtonsClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { useObjectMemo } from 'hooks/useObjectMemo';

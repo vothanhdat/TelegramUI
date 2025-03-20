@@ -1,5 +1,7 @@
 import { HTMLAttributes, ReactNode } from 'react';
 import styles from './Placeholder.module.css';
+export {styles as PlaceholderClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { hasReactNode } from 'helpers/react/node';

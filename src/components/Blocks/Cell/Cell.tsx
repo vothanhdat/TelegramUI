@@ -2,6 +2,8 @@
 
 import { ElementType, forwardRef, ReactElement, ReactNode } from 'react';
 import styles from './Cell.module.css';
+export {styles as CellClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { hasReactNode } from 'helpers/react/node';

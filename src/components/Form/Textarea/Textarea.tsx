@@ -2,6 +2,8 @@
 
 import { forwardRef, TextareaHTMLAttributes } from 'react';
 import styles from './Textarea.module.css';
+export {styles as TextareaClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { usePlatform } from 'hooks/usePlatform';

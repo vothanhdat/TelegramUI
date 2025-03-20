@@ -1,5 +1,7 @@
 import { forwardRef } from 'react';
 import styles from './Text.module.css';
+export {styles as TextClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

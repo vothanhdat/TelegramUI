@@ -2,6 +2,8 @@
 
 import { HTMLAttributes, useEffect, useState } from 'react';
 import styles from './Spoiler.module.css';
+export {styles as SpoilerClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { callMultiple } from 'helpers/function';

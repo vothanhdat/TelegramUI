@@ -2,6 +2,8 @@
 
 import { ElementType, forwardRef, HTMLAttributes, RefObject, useState } from 'react';
 import styles from './Popper.module.css';
+export {styles as PopperClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { multipleRef } from 'helpers/react/refs';

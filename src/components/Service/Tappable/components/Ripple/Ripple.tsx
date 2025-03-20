@@ -1,4 +1,6 @@
 import styles from './Ripple.module.css';
+export {styles as RippleClasses};
+
 
 interface Wave {
   x: number;

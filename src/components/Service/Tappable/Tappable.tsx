@@ -2,6 +2,8 @@
 
 import { AllHTMLAttributes, ElementType, forwardRef } from 'react';
 import styles from './Tappable.module.css';
+export {styles as TappableClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { usePlatform } from 'hooks/usePlatform';

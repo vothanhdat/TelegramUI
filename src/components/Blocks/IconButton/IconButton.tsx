@@ -1,5 +1,7 @@
 import { ButtonHTMLAttributes, forwardRef } from 'react';
 import styles from './IconButton.module.css';
+export {styles as IconButtonClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

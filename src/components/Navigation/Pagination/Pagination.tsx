@@ -1,5 +1,7 @@
 import { HTMLAttributes } from 'react';
 import styles from './Pagination.module.css';
+export {styles as PaginationClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

@@ -1,4 +1,6 @@
 import styles from './Avatar.module.css';
+export { styles as AvatarClasses };
+
 
 import { classNames } from 'helpers/classNames';
 

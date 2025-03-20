@@ -1,5 +1,7 @@
 import { forwardRef, HTMLAttributes, ReactNode } from 'react';
 import styles from './ModalHeader.module.css';
+export {styles as ModalHeaderClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { usePlatform } from 'hooks/usePlatform';

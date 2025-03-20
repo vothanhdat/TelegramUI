@@ -2,6 +2,8 @@
 
 import { AllHTMLAttributes, ElementType, forwardRef, ReactNode } from 'react';
 import styles from './Button.module.css';
+export {styles as ButtonClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { hasReactNode } from 'helpers/react/node';

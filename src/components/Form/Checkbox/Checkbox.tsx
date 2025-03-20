@@ -1,5 +1,7 @@
 import { forwardRef, InputHTMLAttributes } from 'react';
 import styles from './Checkbox.module.css';
+export {styles as CheckboxClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

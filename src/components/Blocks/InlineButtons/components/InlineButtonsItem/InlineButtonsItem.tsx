@@ -2,6 +2,8 @@
 
 import { ButtonHTMLAttributes, ReactNode, useContext } from 'react';
 import styles from './InlineButtonsItem.module.css';
+export {styles as InlineButtonsItemClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { hasReactNode } from 'helpers/react/node';

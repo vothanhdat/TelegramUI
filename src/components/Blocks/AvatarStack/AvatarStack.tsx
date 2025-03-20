@@ -1,5 +1,7 @@
 import { HTMLAttributes, ReactElement } from 'react';
 import styles from './AvatarStack.module.css';
+export {styles as AvatarStackClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

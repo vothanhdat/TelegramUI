@@ -2,6 +2,8 @@
 
 import { FocusEvent, forwardRef, InputHTMLAttributes, KeyboardEvent, useCallback, useEffect, useId, useRef } from 'react';
 import styles from './Multiselect.module.css';
+export {styles as MultiselectClasses};
+
 
 import { Keys } from 'helpers/accessibility';
 import { classNames } from 'helpers/classNames';

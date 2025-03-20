@@ -2,6 +2,8 @@
 
 import { ElementType, forwardRef, ReactNode } from 'react';
 import styles from './ButtonCell.module.css';
+export {styles as ButtonCellClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { hasReactNode } from 'helpers/react/node';

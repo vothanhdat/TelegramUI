@@ -2,6 +2,8 @@
 
 import { forwardRef, HTMLAttributes, InputHTMLAttributes } from 'react';
 import styles from './SliderThumb.module.css';
+export {styles as SliderThumbClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { usePlatform } from 'hooks/usePlatform';

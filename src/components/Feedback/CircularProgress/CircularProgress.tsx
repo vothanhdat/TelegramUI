@@ -1,5 +1,7 @@
 import { HTMLAttributes } from 'react';
 import styles from './CircularProgress.module.css';
+export {styles as CircularProgressClasses};
+
 
 import { getCircleAttributes } from 'components/Feedback/CircularProgress/helpers/getCircleAttributes';
 

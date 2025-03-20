@@ -2,6 +2,8 @@
 
 import { ButtonHTMLAttributes } from 'react';
 import styles from './TabsItem.module.css';
+export {styles as TabsItemClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { usePlatform } from 'hooks/usePlatform';

@@ -1,5 +1,7 @@
 import { forwardRef, ForwardRefExoticComponent, HTMLAttributes, RefAttributes } from 'react';
 import styles from './Card.module.css';
+export {styles as CardClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { useObjectMemo } from 'hooks/useObjectMemo';

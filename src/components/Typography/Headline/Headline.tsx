@@ -1,4 +1,6 @@
 import styles from './Headline.module.css';
+export {styles as HeadlineClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

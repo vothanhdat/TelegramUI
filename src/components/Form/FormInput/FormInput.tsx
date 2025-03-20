@@ -2,6 +2,8 @@
 
 import { forwardRef, HTMLAttributes, ReactNode, useState } from 'react';
 import styles from './FormInput.module.css';
+export {styles as FormInputClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { callMultiple } from 'helpers/function';

@@ -1,4 +1,6 @@
 import styles from './LargeTitle.module.css';
+export {styles as LargeTitleClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

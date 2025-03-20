@@ -1,5 +1,7 @@
 import { ButtonHTMLAttributes } from 'react';
 import styles from './SnackbarButton.module.css';
+export {styles as SnackbarButtonClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

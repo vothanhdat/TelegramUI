@@ -2,6 +2,8 @@
 
 import { HTMLAttributes } from 'react';
 import styles from './Progress.module.css';
+export {styles as ProgressClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { clamp } from 'helpers/math';

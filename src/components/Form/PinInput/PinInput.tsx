@@ -1,5 +1,7 @@
 import { forwardRef, HTMLAttributes, ReactNode } from 'react';
 import styles from './PinInput.module.css';
+export {styles as PinInputClasses};
+
 
 import { Keys } from 'helpers/accessibility';
 import { createChunks } from 'helpers/chunk';

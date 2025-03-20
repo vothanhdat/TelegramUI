@@ -2,6 +2,8 @@
 
 import { HTMLAttributes } from 'react';
 import styles from './Spinner.module.css';
+export {styles as SpinnerClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { usePlatform } from 'hooks/usePlatform';

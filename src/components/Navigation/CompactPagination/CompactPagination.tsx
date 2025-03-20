@@ -1,5 +1,7 @@
 import { HTMLAttributes, ReactElement } from 'react';
 import styles from './CompactPagination.module.css';
+export {styles as CompactPaginationClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

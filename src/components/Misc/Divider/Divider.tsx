@@ -1,5 +1,7 @@
 import { HTMLAttributes } from 'react';
 import styles from './Divider.module.css';
+export {styles as DividerClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

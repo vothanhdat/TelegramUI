@@ -1,5 +1,7 @@
 import { forwardRef, useMemo } from 'react';
 import styles from './ModalOverlay.module.css';
+export {styles as ModalOverlayClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { hexToRGB } from 'helpers/color';

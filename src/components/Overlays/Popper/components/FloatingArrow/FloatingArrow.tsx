@@ -1,5 +1,7 @@
 import { ComponentType, forwardRef, HTMLAttributes, SVGAttributes } from 'react';
 import styles from './FloatingArrow.module.css';
+export {styles as FloatingArrowClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

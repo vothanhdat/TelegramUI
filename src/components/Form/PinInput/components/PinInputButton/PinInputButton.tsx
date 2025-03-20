@@ -1,5 +1,7 @@
 import { ButtonHTMLAttributes } from 'react';
 import styles from './PinInputButton.module.css';
+export {styles as PinInputButtonClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { usePlatform } from 'hooks/usePlatform';

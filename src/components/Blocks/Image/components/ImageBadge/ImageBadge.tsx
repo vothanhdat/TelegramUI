@@ -1,4 +1,6 @@
 import styles from './ImageBadge.module.css';
+export {styles as ImageBadgeClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

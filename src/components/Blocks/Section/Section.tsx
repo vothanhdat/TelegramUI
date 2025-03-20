@@ -2,6 +2,8 @@
 
 import { Children, HTMLAttributes, ReactNode } from 'react';
 import styles from './Section.module.css';
+export {styles as SectionClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { isPrimitiveReactNode } from 'helpers/react/node';

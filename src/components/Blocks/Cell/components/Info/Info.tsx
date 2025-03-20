@@ -1,5 +1,7 @@
 import { HTMLAttributes, ReactElement } from 'react';
 import styles from './Info.module.css';
+export {styles as InfoClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { hasReactNode } from 'helpers/react/node';

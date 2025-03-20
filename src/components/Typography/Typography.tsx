@@ -1,5 +1,7 @@
 import { AllHTMLAttributes, ElementType, forwardRef } from 'react';
 import styles from './Typography.module.css';
+export {styles as TypographyClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

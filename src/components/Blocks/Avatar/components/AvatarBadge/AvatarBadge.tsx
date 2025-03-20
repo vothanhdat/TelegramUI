@@ -1,4 +1,6 @@
 import styles from './AvatarBadge.module.css';
+export {styles as AvatarBadgeClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

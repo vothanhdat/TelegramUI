@@ -1,5 +1,7 @@
 import { Children, HTMLAttributes, isValidElement, ReactElement } from 'react';
 import styles from './SegmentedControl.module.css';
+export {styles as SegmentedControlClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { usePlatform } from 'hooks/usePlatform';

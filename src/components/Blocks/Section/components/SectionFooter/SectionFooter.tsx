@@ -2,6 +2,8 @@
 
 import { HTMLAttributes } from 'react';
 import styles from './SectionFooter.module.css';
+export {styles as SectionFooterClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { usePlatform } from 'hooks/usePlatform';

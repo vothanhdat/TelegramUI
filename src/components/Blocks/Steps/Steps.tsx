@@ -1,5 +1,7 @@
 import { HTMLAttributes } from 'react';
 import styles from './Steps.module.css';
+export {styles as StepsClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

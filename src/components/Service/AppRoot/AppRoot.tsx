@@ -2,6 +2,8 @@
 
 import { forwardRef, HTMLAttributes } from 'react';
 import styles from './AppRoot.module.css';
+export {styles as AppRootClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { multipleRef } from 'helpers/react/refs';

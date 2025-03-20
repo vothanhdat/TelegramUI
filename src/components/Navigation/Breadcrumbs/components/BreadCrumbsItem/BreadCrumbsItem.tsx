@@ -1,5 +1,7 @@
 import { AllHTMLAttributes, ElementType } from 'react';
 import styles from './BreadCrumbsItem.module.css';
+export {styles as BreadCrumbsItemClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

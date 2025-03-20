@@ -1,4 +1,6 @@
 import styles from './Tooltip.module.css';
+export {styles as TooltipClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

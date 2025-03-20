@@ -1,5 +1,7 @@
 import { ElementType } from 'react';
 import styles from './Title.module.css';
+export {styles as TitleClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

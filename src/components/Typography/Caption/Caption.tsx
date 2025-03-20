@@ -1,4 +1,6 @@
 import styles from './Caption.module.css';
+export {styles as CaptionClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

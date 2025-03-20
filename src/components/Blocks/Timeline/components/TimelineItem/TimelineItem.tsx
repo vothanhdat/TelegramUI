@@ -1,5 +1,7 @@
 import { HTMLAttributes, ReactNode } from 'react';
 import styles from './TimelineItem.module.css';
+export {styles as TimelineItemClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { usePlatform } from 'hooks/usePlatform';

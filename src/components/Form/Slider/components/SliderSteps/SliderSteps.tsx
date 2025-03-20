@@ -1,6 +1,8 @@
 'use client';
 
 import styles from './SliderSteps.module.css';
+export {styles as SliderStepsClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { usePlatform } from 'hooks/usePlatform';

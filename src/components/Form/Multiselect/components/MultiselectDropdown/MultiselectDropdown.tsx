@@ -1,5 +1,7 @@
 import { forwardRef, ForwardRefExoticComponent, Fragment, MouseEvent, RefAttributes, RefObject } from 'react';
 import styles from './MultiselectDropdown.module.css';
+export {styles as MultiselectDropdownClasses};
+
 
 import { Cell, CellProps } from 'components/Blocks/Cell/Cell';
 import { MultiselectOption } from 'components/Form/Multiselect/types';

@@ -1,5 +1,7 @@
 import { HTMLAttributes } from 'react';
 import styles from './IconContainer.module.css';
+export {styles as IconContainerClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

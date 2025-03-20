@@ -2,6 +2,8 @@
 
 import { AllHTMLAttributes, ElementType, ReactNode } from 'react';
 import styles from './Chip.module.css';
+export {styles as ChipClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { hasReactNode } from 'helpers/react/node';

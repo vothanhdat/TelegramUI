@@ -2,6 +2,8 @@
 
 import { forwardRef, InputHTMLAttributes } from 'react';
 import styles from './Switch.module.css';
+export {styles as SwitchClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { usePlatform } from 'hooks/usePlatform';

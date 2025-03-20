@@ -1,5 +1,7 @@
 import { Children, HTMLAttributes, isValidElement, ReactElement } from 'react';
 import styles from './TabsList.module.css';
+export {styles as TabsListClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

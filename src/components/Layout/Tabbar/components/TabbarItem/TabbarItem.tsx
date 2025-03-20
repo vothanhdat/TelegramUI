@@ -2,6 +2,8 @@
 
 import { ButtonHTMLAttributes, ReactNode } from 'react';
 import styles from './TabbarItem.module.css';
+export {styles as TabbarItemClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { hasReactNode } from 'helpers/react/node';

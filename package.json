@@ -1,6 +1,6 @@
 {
   "name": "telegram-ui-fork",
-  "version": "2.1.7c",
+  "version": "2.1.7d",
   "description": "World-class, ultimate UI developer toolkit.",
   "type": "module",
   "main": "dist/index.js",
@@ -22,14 +22,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:Telegram-Mini-Apps/TelegramUI.git"
+    "url": "git+ssh://git@github.com:vothanhdat/TelegramUI.git"
   },
   "author": "Ilya Smirnov",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Telegram-Mini-Apps/TelegramUI/issues"
+    "url": "https://github.com/vothanhdat/TelegramUI/issues"
   },
-  "homepage": "https://github.com/Telegram-Mini-Apps/TelegramUI#readme",
+  "homepage": "https://github.com/vothanhdat/TelegramUI#readme",
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

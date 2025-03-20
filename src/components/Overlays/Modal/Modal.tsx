@@ -10,6 +10,8 @@ import {
   useState,
 } from 'react';
 import styles from './Modal.module.css';
+export {styles as ModalClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { useAppRootContext } from 'hooks/useAppRootContext';

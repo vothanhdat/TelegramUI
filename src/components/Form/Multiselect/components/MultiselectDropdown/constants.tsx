@@ -1,4 +1,6 @@
 import styles from './MultiselectDropdown.module.css';
+export {styles as MultiselectDropdownClasses};
+
 
 import { usePlatform } from 'hooks/usePlatform';
 

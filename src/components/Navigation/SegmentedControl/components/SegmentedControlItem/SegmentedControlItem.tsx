@@ -2,6 +2,8 @@
 
 import { ButtonHTMLAttributes } from 'react';
 import styles from './SegmentedControlItem.module.css';
+export {styles as SegmentedControlItemClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { usePlatform } from 'hooks/usePlatform';

@@ -1,5 +1,7 @@
 import { forwardRef } from 'react';
 import styles from './Subheadline.module.css';
+export {styles as SubheadlineClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

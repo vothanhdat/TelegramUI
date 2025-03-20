@@ -1,5 +1,7 @@
 import { useContext } from 'react';
 import styles from './AccordionSummary.module.css';
+export {styles as AccordionSummaryClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { callMultiple } from 'helpers/function';

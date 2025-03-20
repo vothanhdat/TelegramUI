@@ -2,6 +2,8 @@
 
 import { HTMLAttributes, useContext, useRef } from 'react';
 import styles from './AccordionContent.module.css';
+export {styles as AccordionContentClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

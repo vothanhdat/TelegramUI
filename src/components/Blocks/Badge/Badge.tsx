@@ -1,5 +1,7 @@
 import { HTMLAttributes } from 'react';
 import styles from './Badge.module.css';
+export {styles as BadgeClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { hasReactNode } from 'helpers/react/node';

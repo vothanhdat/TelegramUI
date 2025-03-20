@@ -1,5 +1,7 @@
 import { forwardRef, InputHTMLAttributes } from 'react';
 import styles from './PinInputCell.module.css';
+export {styles as PinInputCellClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { usePlatform } from 'hooks/usePlatform';

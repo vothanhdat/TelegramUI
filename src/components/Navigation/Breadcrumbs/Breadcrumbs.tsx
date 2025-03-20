@@ -1,5 +1,7 @@
 import { Children, HTMLAttributes, ReactNode } from 'react';
 import styles from './Breadcrumbs.module.css';
+export {styles as BreadcrumbsClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

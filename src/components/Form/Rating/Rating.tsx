@@ -1,5 +1,7 @@
 import { ChangeEvent, ElementType, HTMLAttributes } from 'react';
 import styles from './Rating.module.css';
+export {styles as RatingClasses};
+
 
 import { clamp } from 'helpers/math';
 import { useCustomEnsuredControl } from 'hooks/useEnsureControl';

@@ -2,6 +2,8 @@
 
 import { HTMLAttributes, ReactElement } from 'react';
 import styles from './Tabbar.module.css';
+export {styles as TabbarClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { usePlatform } from 'hooks/usePlatform';

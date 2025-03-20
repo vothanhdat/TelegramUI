@@ -1,5 +1,7 @@
 import { AllHTMLAttributes, ElementType } from 'react';
 import styles from './HorizontalScroll.module.css';
+export {styles as HorizontalScrollClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

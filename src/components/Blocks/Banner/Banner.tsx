@@ -2,6 +2,8 @@
 
 import { HTMLAttributes, MouseEventHandler, ReactNode } from 'react';
 import styles from './Banner.module.css';
+export {styles as BannerClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { hasReactNode } from 'helpers/react/node';

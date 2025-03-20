@@ -1,5 +1,7 @@
 import { AnchorHTMLAttributes } from 'react';
 import styles from './Link.module.css';
+export {styles as LinkClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

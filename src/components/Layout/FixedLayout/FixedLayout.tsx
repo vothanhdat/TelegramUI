@@ -1,5 +1,7 @@
 import { AllHTMLAttributes, ElementType } from 'react';
 import styles from './FixedLayout.module.css';
+export {styles as FixedLayoutClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

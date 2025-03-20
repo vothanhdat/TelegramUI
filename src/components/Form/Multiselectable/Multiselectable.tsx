@@ -2,6 +2,8 @@
 
 import { InputHTMLAttributes } from 'react';
 import styles from './Multiselectable.module.css';
+export {styles as MultiselectableClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { usePlatform } from 'hooks/usePlatform';

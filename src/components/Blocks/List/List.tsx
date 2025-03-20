@@ -2,6 +2,8 @@
 
 import { ElementType, HTMLAttributes } from 'react';
 import styles from './List.module.css';
+export {styles as ListClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { usePlatform } from 'hooks/usePlatform';

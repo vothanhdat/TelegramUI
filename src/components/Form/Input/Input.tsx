@@ -2,6 +2,8 @@
 
 import { forwardRef, InputHTMLAttributes } from 'react';
 import styles from './Input.module.css';
+export {styles as InputClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { usePlatform } from 'hooks/usePlatform';

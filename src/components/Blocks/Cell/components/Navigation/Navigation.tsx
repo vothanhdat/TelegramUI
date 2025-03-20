@@ -2,6 +2,8 @@
 
 import { HTMLAttributes } from 'react';
 import styles from './Navigation.module.css';
+export {styles as NavigationClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { hasReactNode } from 'helpers/react/node';

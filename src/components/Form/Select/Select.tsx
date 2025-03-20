@@ -2,6 +2,8 @@
 
 import { forwardRef, ReactNode, SelectHTMLAttributes } from 'react';
 import styles from './Select.module.css';
+export {styles as SelectClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { usePlatform } from 'hooks/usePlatform';

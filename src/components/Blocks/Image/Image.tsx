@@ -2,6 +2,8 @@
 
 import { ImgHTMLAttributes, isValidElement, ReactNode, SyntheticEvent, useState } from 'react';
 import styles from './Image.module.css';
+export {styles as ImageClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

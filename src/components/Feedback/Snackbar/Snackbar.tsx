@@ -2,6 +2,8 @@
 
 import { HTMLAttributes, ReactElement, ReactNode, useEffect, useState } from 'react';
 import styles from './Snackbar.module.css';
+export {styles as SnackbarClasses};
+
 
 import { classNames } from 'helpers/classNames';
 import { hasReactNode } from 'helpers/react/node';

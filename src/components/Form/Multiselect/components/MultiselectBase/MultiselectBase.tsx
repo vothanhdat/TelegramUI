@@ -7,6 +7,8 @@ import {
   RefObject,
 } from 'react';
 import styles from './MultiselectBase.module.css';
+export {styles as MultiselectBaseClasses};
+
 
 import { getHorizontalSideByKey, Keys } from 'helpers/accessibility';
 import { classNames } from 'helpers/classNames';

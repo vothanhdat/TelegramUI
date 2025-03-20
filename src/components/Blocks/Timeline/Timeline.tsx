@@ -1,5 +1,7 @@
 import { Children, cloneElement, HTMLAttributes, isValidElement, ReactElement } from 'react';
 import styles from './Timeline.module.css';
+export {styles as TimelineClasses};
+
 
 import { classNames } from 'helpers/classNames';
 

@@ -1,4 +1,6 @@
 import styles from './CardChip.module.css';
+export {styles as CardChipClasses};
+
 
 import { classNames } from 'helpers/classNames';
 
