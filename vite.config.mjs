@@ -15,10 +15,10 @@ export default defineConfig({
       formats: ['es']
     },
     rollupOptions: {
-      external: ['react', 'react-dom', 'react/jsx-runtime'],
+      external: ['react', 'react-dom', 'react/jsx-runtime', '@floating-ui/react-dom', '@twa-dev/types', '@xelene/vaul-with-scroll-fix'],
       input: Object.fromEntries(
         glob.sync('src/**/*.{ts,tsx}', {
-          ignore: ["src/**/*.d.ts", "src/**/*.stories.tsx"],
+          ignore: ["src/**/*.d.ts", "src/**/*.stories.tsx", "src/storybook/*.{ts,tsx}"],
         }).map(file => [
           relative(
             'src',
@@ -44,6 +44,16 @@ export default defineConfig({
   plugins: [
     tsconfigPaths(),
     react(),
-    dts({ include: ['src'] })
+    dts({
+      include: ['src'],
+      exclude: [
+        "src/**/*.stories.tsx", "src/storybook/*.{ts,tsx}"
+      ]
+    })
   ],
+  css: {
+    modules: {
+      exportGlobals: true,
+    }
+  }
 })
