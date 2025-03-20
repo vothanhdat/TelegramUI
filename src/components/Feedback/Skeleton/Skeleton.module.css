@@ -33,10 +33,10 @@
     var(--animate-color-bg) 100%
   ); 
   background-size: 200% 200%, 200% 200%;
-  animation: fade 2s linear infinite;
+  animation: skeleton-animate 2s linear infinite;
 }
 
-@keyframes fade {
+@keyframes skeleton-animate {
   0% {
     background-position: 200% 0, 230% 0;
   }
